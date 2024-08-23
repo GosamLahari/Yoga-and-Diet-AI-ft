@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga and Diet Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <form action="/" method="POST">
+        <h1>Yoga and Diet Recommendations for Chronic Diseases</h1>
+        <p>Learn the importance of yoga and diet in managing chronic diseases.</p>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="bp">Blood Pressure</label>
+        <input type="text" id="bp" name="bp" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="disease">Chronic Disease Type</label>
+        <select id="disease" name="disease" required>
+            <option value="osteoarthritis">Osteoarthritis</option>
+            <option value="diabetes">Diabetes</option>
+            <option value="hypertension">Hypertension</option>
+            <option value="heart_disease">Heart Disease</option>
+            <option value="asthma">Asthma</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="pain_severity">Severity of Pain</label>
+        <input type="text" id="pain_severity" name="pain_severity" required>
+
+        <button type="submit">Diet Recommendations</button>
+        <button type="submit">Yoga Recommendations</button>
+    </form>
+</body>
+</html>
